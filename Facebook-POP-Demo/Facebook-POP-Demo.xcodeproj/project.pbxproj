@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251970741D0E4F4800DA38FC /* NumberGradualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251970731D0E4F4800DA38FC /* NumberGradualViewController.m */; };
+		251970781D0E5B4B00DA38FC /* CurlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251970771D0E5B4B00DA38FC /* CurlingViewController.m */; };
+		2519707C1D0E61D400DA38FC /* CardFlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2519707B1D0E61D400DA38FC /* CardFlyViewController.m */; };
+		251970821D0E80C500DA38FC /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 251970811D0E80C500DA38FC /* ProgressViewController.m */; };
+		2591766C1D0D33AC001CA085 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2591766B1D0D33AC001CA085 /* main.m */; };
+		2591766F1D0D33AC001CA085 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2591766E1D0D33AC001CA085 /* AppDelegate.m */; };
+		259176721D0D33AC001CA085 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259176711D0D33AC001CA085 /* ViewController.m */; };
+		259176751D0D33AC001CA085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259176731D0D33AC001CA085 /* Main.storyboard */; };
+		259176771D0D33AC001CA085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259176761D0D33AC001CA085 /* Assets.xcassets */; };
+		2591767A1D0D33AC001CA085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259176781D0D33AC001CA085 /* LaunchScreen.storyboard */; };
+		259176841D0D3E00001CA085 /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259176831D0D3E00001CA085 /* BaseAnimationViewController.m */; };
+		259176871D0D49BF001CA085 /* AnimationPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 259176861D0D49BF001CA085 /* AnimationPropertiesViewController.m */; };
+		2591768B1D0D5246001CA085 /* AnimatableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2591768A1D0D5246001CA085 /* AnimatableModel.m */; };
+		3AE689CB509490AA9EFA79E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B752DD9597E13AF6E9D11FEF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		251970721D0E4F4800DA38FC /* NumberGradualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberGradualViewController.h; sourceTree = "<group>"; };
+		251970731D0E4F4800DA38FC /* NumberGradualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberGradualViewController.m; sourceTree = "<group>"; };
+		251970761D0E5B4B00DA38FC /* CurlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurlingViewController.h; sourceTree = "<group>"; };
+		251970771D0E5B4B00DA38FC /* CurlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurlingViewController.m; sourceTree = "<group>"; };
+		2519707A1D0E61D400DA38FC /* CardFlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardFlyViewController.h; sourceTree = "<group>"; };
+		2519707B1D0E61D400DA38FC /* CardFlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardFlyViewController.m; sourceTree = "<group>"; };
+		251970801D0E80C500DA38FC /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		251970811D0E80C500DA38FC /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		259176671D0D33AC001CA085 /* Facebook-POP-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook-POP-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2591766B1D0D33AC001CA085 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2591766D1D0D33AC001CA085 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2591766E1D0D33AC001CA085 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		259176701D0D33AC001CA085 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		259176711D0D33AC001CA085 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		259176741D0D33AC001CA085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		259176761D0D33AC001CA085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		259176791D0D33AC001CA085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2591767B1D0D33AC001CA085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259176821D0D3E00001CA085 /* BaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimationViewController.h; sourceTree = "<group>"; };
+		259176831D0D3E00001CA085 /* BaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationViewController.m; sourceTree = "<group>"; };
+		259176851D0D49BF001CA085 /* AnimationPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationPropertiesViewController.h; sourceTree = "<group>"; };
+		259176861D0D49BF001CA085 /* AnimationPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationPropertiesViewController.m; sourceTree = "<group>"; };
+		259176891D0D5246001CA085 /* AnimatableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatableModel.h; sourceTree = "<group>"; };
+		2591768A1D0D5246001CA085 /* AnimatableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatableModel.m; sourceTree = "<group>"; };
+		8AD734E8CE02F78CEEBF0642 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B19D3B07A4BFCB2B79953984 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B752DD9597E13AF6E9D11FEF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		259176641D0D33AC001CA085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE689CB509490AA9EFA79E3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251970711D0E4F2300DA38FC /* 数字渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				251970721D0E4F4800DA38FC /* NumberGradualViewController.h */,
+				251970731D0E4F4800DA38FC /* NumberGradualViewController.m */,
+			);
+			name = "数字渐变";
+			sourceTree = "<group>";
+		};
+		251970751D0E5B3500DA38FC /* 冰壶 */ = {
+			isa = PBXGroup;
+			children = (
+				251970761D0E5B4B00DA38FC /* CurlingViewController.h */,
+				251970771D0E5B4B00DA38FC /* CurlingViewController.m */,
+			);
+			name = "冰壶";
+			sourceTree = "<group>";
+		};
+		251970791D0E61B900DA38FC /* 卡片飞入 */ = {
+			isa = PBXGroup;
+			children = (
+				2519707A1D0E61D400DA38FC /* CardFlyViewController.h */,
+				2519707B1D0E61D400DA38FC /* CardFlyViewController.m */,
+			);
+			name = "卡片飞入";
+			sourceTree = "<group>";
+		};
+		2519707F1D0E80A600DA38FC /* 进度条动画 */ = {
+			isa = PBXGroup;
+			children = (
+				251970801D0E80C500DA38FC /* ProgressViewController.h */,
+				251970811D0E80C500DA38FC /* ProgressViewController.m */,
+			);
+			name = "进度条动画";
+			sourceTree = "<group>";
+		};
+		2591765E1D0D33AC001CA085 = {
+			isa = PBXGroup;
+			children = (
+				259176691D0D33AC001CA085 /* Facebook-POP-Demo */,
+				259176681D0D33AC001CA085 /* Products */,
+				F955154042E2434624558420 /* Pods */,
+				E01D6BFB0443CC93C7EC9587 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		259176681D0D33AC001CA085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				259176671D0D33AC001CA085 /* Facebook-POP-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		259176691D0D33AC001CA085 /* Facebook-POP-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				259176881D0D521F001CA085 /* Model */,
+				259176811D0D3DDB001CA085 /* ViewControllers */,
+				2591766D1D0D33AC001CA085 /* AppDelegate.h */,
+				2591766E1D0D33AC001CA085 /* AppDelegate.m */,
+				259176701D0D33AC001CA085 /* ViewController.h */,
+				259176711D0D33AC001CA085 /* ViewController.m */,
+				259176731D0D33AC001CA085 /* Main.storyboard */,
+				259176761D0D33AC001CA085 /* Assets.xcassets */,
+				259176781D0D33AC001CA085 /* LaunchScreen.storyboard */,
+				2591767B1D0D33AC001CA085 /* Info.plist */,
+				2591766A1D0D33AC001CA085 /* Supporting Files */,
+			);
+			path = "Facebook-POP-Demo";
+			sourceTree = "<group>";
+		};
+		2591766A1D0D33AC001CA085 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2591766B1D0D33AC001CA085 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		259176811D0D3DDB001CA085 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2519707F1D0E80A600DA38FC /* 进度条动画 */,
+				251970791D0E61B900DA38FC /* 卡片飞入 */,
+				251970751D0E5B3500DA38FC /* 冰壶 */,
+				251970711D0E4F2300DA38FC /* 数字渐变 */,
+				259176821D0D3E00001CA085 /* BaseAnimationViewController.h */,
+				259176831D0D3E00001CA085 /* BaseAnimationViewController.m */,
+				259176851D0D49BF001CA085 /* AnimationPropertiesViewController.h */,
+				259176861D0D49BF001CA085 /* AnimationPropertiesViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		259176881D0D521F001CA085 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				259176891D0D5246001CA085 /* AnimatableModel.h */,
+				2591768A1D0D5246001CA085 /* AnimatableModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E01D6BFB0443CC93C7EC9587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B752DD9597E13AF6E9D11FEF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F955154042E2434624558420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AD734E8CE02F78CEEBF0642 /* Pods.debug.xcconfig */,
+				B19D3B07A4BFCB2B79953984 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		259176661D0D33AC001CA085 /* Facebook-POP-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2591767E1D0D33AC001CA085 /* Build configuration list for PBXNativeTarget "Facebook-POP-Demo" */;
+			buildPhases = (
+				FE99FF28BC9DD4984D8F427E /* Check Pods Manifest.lock */,
+				259176631D0D33AC001CA085 /* Sources */,
+				259176641D0D33AC001CA085 /* Frameworks */,
+				259176651D0D33AC001CA085 /* Resources */,
+				19D56FF88D7531D9F19FAC63 /* Embed Pods Frameworks */,
+				BE1EB6C0999CBEADAF5B6C00 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Facebook-POP-Demo";
+			productName = "Facebook-POP-Demo";
+			productReference = 259176671D0D33AC001CA085 /* Facebook-POP-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2591765F1D0D33AC001CA085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "snqu-ios";
+				TargetAttributes = {
+					259176661D0D33AC001CA085 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 259176621D0D33AC001CA085 /* Build configuration list for PBXProject "Facebook-POP-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2591765E1D0D33AC001CA085;
+			productRefGroup = 259176681D0D33AC001CA085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				259176661D0D33AC001CA085 /* Facebook-POP-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		259176651D0D33AC001CA085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2591767A1D0D33AC001CA085 /* LaunchScreen.storyboard in Resources */,
+				259176771D0D33AC001CA085 /* Assets.xcassets in Resources */,
+				259176751D0D33AC001CA085 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D56FF88D7531D9F19FAC63 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1EB6C0999CBEADAF5B6C00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE99FF28BC9DD4984D8F427E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		259176631D0D33AC001CA085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259176871D0D49BF001CA085 /* AnimationPropertiesViewController.m in Sources */,
+				2591768B1D0D5246001CA085 /* AnimatableModel.m in Sources */,
+				259176721D0D33AC001CA085 /* ViewController.m in Sources */,
+				2591766F1D0D33AC001CA085 /* AppDelegate.m in Sources */,
+				259176841D0D3E00001CA085 /* BaseAnimationViewController.m in Sources */,
+				251970821D0E80C500DA38FC /* ProgressViewController.m in Sources */,
+				2519707C1D0E61D400DA38FC /* CardFlyViewController.m in Sources */,
+				251970781D0E5B4B00DA38FC /* CurlingViewController.m in Sources */,
+				2591766C1D0D33AC001CA085 /* main.m in Sources */,
+				251970741D0E4F4800DA38FC /* NumberGradualViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		259176731D0D33AC001CA085 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				259176741D0D33AC001CA085 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		259176781D0D33AC001CA085 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				259176791D0D33AC001CA085 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2591767C1D0D33AC001CA085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2591767D1D0D33AC001CA085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2591767F1D0D33AC001CA085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD734E8CE02F78CEEBF0642 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Facebook-POP-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snqu.Facebook-POP-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		259176801D0D33AC001CA085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19D3B07A4BFCB2B79953984 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Facebook-POP-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snqu.Facebook-POP-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		259176621D0D33AC001CA085 /* Build configuration list for PBXProject "Facebook-POP-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2591767C1D0D33AC001CA085 /* Debug */,
+				2591767D1D0D33AC001CA085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2591767E1D0D33AC001CA085 /* Build configuration list for PBXNativeTarget "Facebook-POP-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2591767F1D0D33AC001CA085 /* Debug */,
+				259176801D0D33AC001CA085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2591765F1D0D33AC001CA085 /* Project object */;
+}
