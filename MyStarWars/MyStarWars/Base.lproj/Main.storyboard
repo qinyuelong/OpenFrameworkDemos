@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nth-iQ-HLU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzi-EK-BpQ" customClass="ProfileButton">
+                                        <rect key="frame" x="64" y="494" width="193" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="193" id="2Ht-ww-Rfv"/>
+                                            <constraint firstAttribute="height" constant="54" id="wJe-Tp-as6"/>
+                                        </constraints>
+                                        <state key="normal" title="Action">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxX-M0-mJl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Kzi-EK-BpQ" secondAttribute="bottom" constant="20" id="Vqe-Bj-seH"/>
+                                    <constraint firstItem="Kzi-EK-BpQ" firstAttribute="centerX" secondItem="Nth-iQ-HLU" secondAttribute="centerX" id="yqs-qA-b5H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nth-iQ-HLU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IHX-7c-3os"/>
+                            <constraint firstAttribute="trailing" secondItem="Nth-iQ-HLU" secondAttribute="trailing" id="OJ2-Gr-9Cl"/>
+                            <constraint firstItem="Nth-iQ-HLU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V2V-er-qeZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nth-iQ-HLU" secondAttribute="bottom" id="mWx-6X-oKG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="449"/>
+        </scene>
+    </scenes>
+</document>
