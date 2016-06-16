@@ -14,6 +14,7 @@ const CGFloat buttonPadding = 50;
 @interface ProfileButton()
 
 @property (nonatomic, strong)CALayer *fillLayer;
+@property (nonatomic, strong) CompletionBlock completionBlock;
 
 @end
 
@@ -47,6 +48,7 @@ const CGFloat buttonPadding = 50;
 }
 
 -(void)animateTouchUpInside:(CompletionBlock)completionBlock{
+    _completionBlock = completionBlock;
     self.userInteractionEnabled = NO;
     self.layer.masksToBounds = YES;
     
@@ -81,6 +83,9 @@ const CGFloat buttonPadding = 50;
     if (flag) {
         [self.fillLayer removeFromSuperlayer];
         self.userInteractionEnabled = YES;
+        if (self.completionBlock) {
+            self.completionBlock();
+        }
     }
 }
 

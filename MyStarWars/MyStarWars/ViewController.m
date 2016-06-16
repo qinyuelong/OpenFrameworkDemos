@@ -28,6 +28,7 @@
 - (IBAction)loginAction:(ProfileButton *)sender {
     [sender animateTouchUpInside:^{
         NSLog(@"ok");
+        [self performSegueWithIdentifier:@"presentSettings" sender:sender];
     }];
     
 }

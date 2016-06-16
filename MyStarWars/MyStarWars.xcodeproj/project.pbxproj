@@ -16,6 +16,8 @@
 		251970A91D0EABEE00DA38FC /* ProfileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 251970A81D0EABEE00DA38FC /* ProfileButton.m */; };
 		251970AB1D0EB2AF00DA38FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251970AA1D0EB2AF00DA38FC /* CoreGraphics.framework */; };
 		251970AF1D0EB43200DA38FC /* CircularRevealAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 251970AE1D0EB43200DA38FC /* CircularRevealAnimator.m */; };
+		257538121D12515F00719F7D /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257538111D12515F00719F7D /* SettingTableViewController.m */; };
+		257538151D1254F400719F7D /* MainSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 257538141D1254F400719F7D /* MainSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		251970AA1D0EB2AF00DA38FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		251970AD1D0EB43200DA38FC /* CircularRevealAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularRevealAnimator.h; sourceTree = "<group>"; };
 		251970AE1D0EB43200DA38FC /* CircularRevealAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularRevealAnimator.m; sourceTree = "<group>"; };
+		257538101D12515F00719F7D /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		257538111D12515F00719F7D /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		257538131D1254F400719F7D /* MainSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainSettingViewController.h; sourceTree = "<group>"; };
+		257538141D1254F400719F7D /* MainSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		2519708E1D0EA8A500DA38FC /* MyStarWars */ = {
 			isa = PBXGroup;
 			children = (
+				2575380F1D12514400719F7D /* ViewControllers */,
 				251970AC1D0EB40E00DA38FC /* Anims */,
 				251970A61D0EABD300DA38FC /* View */,
 				251970921D0EA8A500DA38FC /* AppDelegate.h */,
@@ -107,6 +114,17 @@
 				251970AE1D0EB43200DA38FC /* CircularRevealAnimator.m */,
 			);
 			name = Anims;
+			sourceTree = "<group>";
+		};
+		2575380F1D12514400719F7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				257538101D12515F00719F7D /* SettingTableViewController.h */,
+				257538111D12515F00719F7D /* SettingTableViewController.m */,
+				257538131D1254F400719F7D /* MainSettingViewController.h */,
+				257538141D1254F400719F7D /* MainSettingViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				251970971D0EA8A500DA38FC /* ViewController.m in Sources */,
+				257538151D1254F400719F7D /* MainSettingViewController.m in Sources */,
 				251970941D0EA8A500DA38FC /* AppDelegate.m in Sources */,
 				251970AF1D0EB43200DA38FC /* CircularRevealAnimator.m in Sources */,
 				251970911D0EA8A500DA38FC /* main.m in Sources */,
+				257538121D12515F00719F7D /* SettingTableViewController.m in Sources */,
 				251970A91D0EABEE00DA38FC /* ProfileButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

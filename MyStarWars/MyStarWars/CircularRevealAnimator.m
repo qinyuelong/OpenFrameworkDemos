@@ -30,6 +30,15 @@
         
         if (invert) {
             // 反转 path
+            CGMutablePathRef path = CGPathCreateMutable();
+            CGPathAddRect(path, NULL, layer.bounds);
+            CGPathAddPath(path, NULL, startCirclePath);
+            startCirclePath = path;
+            
+            path = CGPathCreateMutable();
+            CGPathAddRect(path, NULL, layer.bounds);
+            CGPathAddPath(path, NULL, endCirclePath);
+            endCirclePath = path;
         }
         
         _layer = layer;
