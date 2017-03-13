@@ -35,10 +35,16 @@
 
 
 - (IBAction)alphaAction:(id)sender {
+    _animationView.alpha = 0.0;
+    
     POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewAlpha];
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     anim.fromValue = @(0.0);
     anim.toValue = @(1.0);
+    anim.duration = 2.0;
+    [anim setCompletionBlock:^(POPAnimation *animation, BOOL complete) {
+        
+    }];
     [_animationView pop_addAnimation:anim forKey:@"fade"];
 }
 
@@ -53,6 +59,17 @@
 - (IBAction)decayAction:(id)sender {
     POPDecayAnimation *anim = [POPDecayAnimation animationWithPropertyNamed:kPOPLayerPositionX];
     anim.velocity = @(100.);
+    [anim setCompletionBlock:^(POPAnimation *animation, BOOL complete) {
+        NSLog(@"complete = %d", complete);
+        if (complete) {
+            POPDecayAnimation *newAnim = (POPDecayAnimation *)[_animationView.layer pop_animationForKey:@"slide"];
+            if (newAnim) {
+                newAnim.velocity = @(-100);
+                [_animationView.layer pop_addAnimation:newAnim forKey:@"newSlide"];
+            }
+        }
+    }];
+    anim.removedOnCompletion = NO;
     [_animationView.layer pop_addAnimation:anim forKey:@"slide"];
     
 }
