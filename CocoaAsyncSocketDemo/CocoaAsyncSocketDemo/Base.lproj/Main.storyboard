@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CocoaAsyncSocketDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zW-R3-GcF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="233"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-K0-jUz">
+                                        <rect key="frame" x="172" y="171" width="31" height="30"/>
+                                        <state key="normal" title="发送"/>
+                                        <connections>
+                                            <action selector="sendMessageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIw-v0-CeW"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWZ-89-cd3">
+                                        <rect key="frame" x="23" y="101.5" width="328" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5698418448" green="0.96789496929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AWZ-89-cd3" firstAttribute="leading" secondItem="5zW-R3-GcF" secondAttribute="leading" constant="23" id="7gl-YN-vXt"/>
+                                    <constraint firstItem="yw2-K0-jUz" firstAttribute="centerX" secondItem="5zW-R3-GcF" secondAttribute="centerX" id="UUa-LY-Sat"/>
+                                    <constraint firstAttribute="trailing" secondItem="AWZ-89-cd3" secondAttribute="trailing" constant="24" id="VlP-QC-oak"/>
+                                    <constraint firstAttribute="bottom" secondItem="yw2-K0-jUz" secondAttribute="bottom" constant="32" id="d85-27-dXb"/>
+                                    <constraint firstItem="AWZ-89-cd3" firstAttribute="centerY" secondItem="5zW-R3-GcF" secondAttribute="centerY" id="efp-x6-1MS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-g4-V3T">
+                                <rect key="frame" x="172" y="279" width="31" height="30"/>
+                                <state key="normal" title="链接"/>
+                                <connections>
+                                    <action selector="connectToServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hY-5C-SKK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQs-Ca-k7j">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="断开"/>
+                                <connections>
+                                    <action selector="disConnectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZj-1r-RUr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AQs-Ca-k7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1SV-To-ZV1"/>
+                            <constraint firstItem="AQs-Ca-k7j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Ot-L9-Ndf"/>
+                            <constraint firstAttribute="trailing" secondItem="5zW-R3-GcF" secondAttribute="trailing" id="8pK-EI-W94"/>
+                            <constraint firstItem="Hbw-g4-V3T" firstAttribute="top" secondItem="5zW-R3-GcF" secondAttribute="bottom" constant="18" id="G4v-ep-7mY"/>
+                            <constraint firstItem="5zW-R3-GcF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RCo-pJ-H07"/>
+                            <constraint firstItem="AQs-Ca-k7j" firstAttribute="top" secondItem="Hbw-g4-V3T" secondAttribute="bottom" constant="9.5" id="pTh-fG-yLx"/>
+                            <constraint firstItem="5zW-R3-GcF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vxZ-mY-TdK"/>
+                            <constraint firstItem="Hbw-g4-V3T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wGp-R2-Dg4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="AWZ-89-cd3" id="uzG-wK-l8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
