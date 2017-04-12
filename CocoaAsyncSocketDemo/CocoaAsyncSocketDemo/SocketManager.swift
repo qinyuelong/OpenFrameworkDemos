@@ -16,6 +16,10 @@ class SocketManager: NSObject{
 
     let host = "127.0.0.1"
     let port: UInt16 = 6969
+    
+//    let host = "192.168.1.200"
+//    let port: UInt16 = 9999
+    
     let tag = 110
     
     private override init(){}

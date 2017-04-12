@@ -4,5 +4,7 @@ project 'CocoaAsyncSocketDemo.xcodeproj'
 
 pod 'CocoaAsyncSocket'
 
+pod 'SocketRocket'
+
 use_frameworks!
 end
