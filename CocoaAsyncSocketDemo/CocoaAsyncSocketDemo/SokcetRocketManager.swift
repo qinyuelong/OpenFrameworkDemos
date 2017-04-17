@@ -20,6 +20,10 @@ class SokcetRocketManager: NSObject{
     
     let host = "127.0.0.1"
     let port: UInt16 = 6969
+    
+//    let host = "192.168.1.200"
+//    let port: UInt16 = 9999
+    
     let tag = 110
     
     var webSocket: SRWebSocket!
@@ -102,21 +106,24 @@ fileprivate extension SokcetRocketManager{
     // 初始化心跳
     func initHeartBeat() {
         DispatchQueue.main.async {
-            self.destoryHeartBeat()
+//            self.destoryHeartBeat() // 不能在这里在一次async 否则线程顺序问题 导致 timer 刚启动就被销毁 回调失效
+            if self.heartBeat != nil {
+                self.heartBeat.invalidate()
+                self.heartBeat = nil
+            }
             if #available(iOS 10.0, *) {
                 self.heartBeat = Timer.scheduledTimer(withTimeInterval: 3 * 60, repeats: true, block: {
                     [unowned self]
                     (_) in
-                  
+                  print("发送心跳包")
                     self.sendMessage("heart")
                     
                 })
             } else {
                 self.heartBeat = Timer(timeInterval: 3 * 60, target: self, selector: #selector(self.sendHeartBeat), userInfo: nil, repeats: true)
+                RunLoop.current.add(self.heartBeat, forMode: .commonModes)
                 self.heartBeat.fire()
             }
-            
-            RunLoop.current.add(self.heartBeat, forMode: .commonModes)
         }
     }
     
@@ -133,6 +140,7 @@ fileprivate extension SokcetRocketManager{
     
     // 定时发送心跳包
     @objc func sendHeartBeat() {
+        print("发送心跳包")
         sendMessage("heart")
     }
     
@@ -151,6 +159,7 @@ extension SokcetRocketManager: SRWebSocketDelegate{
     func webSocketDidOpen(_ webSocket: SRWebSocket!) {
         print("链接成功")
         
+        pingPong()
         // 连接成功了开始发送心跳
         initHeartBeat()
     }
