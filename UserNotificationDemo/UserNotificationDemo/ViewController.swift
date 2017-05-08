@@ -56,7 +56,15 @@ class ViewController: UITableViewController {
             guard let vc = segue.destination as? TimeIntervalViewController else {
                 fatalError("The destination should be TimeIntervalViewController")
             }
-        default: break
+            vc.notificationType = .timeInterval
+        case .showTimeIntervalForeground:
+            guard let vc = segue.destination as? TimeIntervalViewController else {
+                fatalError("The destination should be TimeIntervalViewController")
+            }
+            vc.notificationType = .timeIntervalForeground
+        case .showManagement: break
+        case .showActionable: break
+        case .showMedia: break
             
         }
     }
