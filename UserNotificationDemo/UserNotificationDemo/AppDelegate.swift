@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let notificationHandler = NotificationHandler()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        registerNotificationCategory()
         UNUserNotificationCenter.current().delegate = notificationHandler
         
         return true
@@ -42,6 +42,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    
+    private func registerNotificationCategory() {
+        let saySomethingCategory: UNNotificationCategory = {
+            let inputAction = UNTextInputNotificationAction(
+                identifier: SaySomethingCategoryAction.input.rawValue,
+                title: "Input",
+                options: [.foreground],
+                textInputButtonTitle: "Send",
+                textInputPlaceholder: "What do you want to say...")
+            
+            let goodbyeAction = UNNotificationAction(
+                identifier: SaySomethingCategoryAction.goodbye.rawValue,
+                title: "Goodbye",
+                options: [.foreground])
+            
+            let cancelAction = UNNotificationAction(
+                identifier: SaySomethingCategoryAction.none.rawValue,
+                title: "Cancel",
+                options: [.destructive])
+            
+            return UNNotificationCategory(identifier: UserNotificationCategoryType.saySomething.rawValue, actions: [inputAction, goodbyeAction, cancelAction], intentIdentifiers: [], options: [.customDismissAction])
+        }()
+        
+        let customUICategory: UNNotificationCategory = {
+            let nextAction = UNNotificationAction(
+                identifier: CustomizeUICategoryAction.switch.rawValue,
+                title: "Switch",
+                options: [])
+            let openAction = UNNotificationAction(
+                identifier: CustomizeUICategoryAction.open.rawValue,
+                title: "Open",
+                options: [.foreground])
+            let dismissAction = UNNotificationAction(
+                identifier: CustomizeUICategoryAction.dismiss.rawValue,
+                title: "Dismiss",
+                options: [.destructive])
+            return UNNotificationCategory(identifier: UserNotificationCategoryType.customUI.rawValue, actions: [nextAction, openAction, dismissAction], intentIdentifiers: [], options: [])
+        }()
+        
+        UNUserNotificationCenter.current().setNotificationCategories([saySomethingCategory, customUICategory])
+        
     }
     
 
