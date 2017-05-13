@@ -4,7 +4,7 @@
 //
 //  Created by snqu-qin on 2017/5/5.
 //  Copyright © 2017年 qin. All rights reserved.
-//
+//  https://onevcat.com/2016/08/notification/
 
 import UIKit
 import UserNotifications
