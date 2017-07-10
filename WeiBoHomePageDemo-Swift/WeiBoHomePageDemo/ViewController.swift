@@ -22,13 +22,16 @@ class ViewController: UIViewController {
         mainTableView.tableFooterView = UIView()
         let notificationName = Notification.Name("kLeaveTopNtf")
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onOtherScrollToTop(notificatiion:)), name: notificationName, object: nil)
+        
+        let gesture = UIPanGestureRecognizer(target: self, action: nil)
+        view.addGestureRecognizer(gesture)
+        gesture.delegate = mainTableView as? UIGestureRecognizerDelegate
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

@@ -128,6 +128,7 @@
 				TargetAttributes = {
 					18101FCE1F13B88200CDE4D1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 83A76GE82G;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -294,13 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 83A76GE82G;
 				INFOPLIST_FILE = "WeiBoHomePageDemo-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.snqu.WeiBoHomePageDemo-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.qin.WeiBoHomePageDemo-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "e3f73598-5a23-46fb-88c1-c6551725a3af";
+				PROVISIONING_PROFILE_SPECIFIER = CommonProfile;
 			};
 			name = Debug;
 		};
@@ -312,7 +314,7 @@
 				INFOPLIST_FILE = "WeiBoHomePageDemo-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.snqu.WeiBoHomePageDemo-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.qin.WeiBoHomePageDemo-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -337,6 +339,7 @@
 				18101FE81F13B88200CDE4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
