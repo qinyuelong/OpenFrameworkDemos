@@ -16,6 +16,7 @@
 		257F01C61EC6F1DC00C4F107 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257F01C41EC6F1DC00C4F107 /* MainInterface.storyboard */; };
 		257F01CA1EC6F1DC00C4F107 /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 257F01BB1EC6F1DC00C4F107 /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		257F01D01EC700BB00C4F107 /* onevcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 257F01CF1EC700BB00C4F107 /* onevcat.jpg */; };
+		258DB3F41EC7623300B7F78B /* CalendarNotificationTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258DB3F31EC7623300B7F78B /* CalendarNotificationTriggerViewController.swift */; };
 		25AA17861EC0C9820030CD44 /* ActionableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA17851EC0C9820030CD44 /* ActionableViewController.swift */; };
 		25F66C5A1EBDA4EF004CAC8A /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F66C591EBDA4EF004CAC8A /* NotificationHandler.swift */; };
 		F9006A571EC01468004175E2 /* ManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9006A561EC01468004175E2 /* ManagementViewController.swift */; };
@@ -65,6 +66,7 @@
 		257F01C51EC6F1DC00C4F107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		257F01C71EC6F1DC00C4F107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257F01CF1EC700BB00C4F107 /* onevcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onevcat.jpg; sourceTree = "<group>"; };
+		258DB3F31EC7623300B7F78B /* CalendarNotificationTriggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarNotificationTriggerViewController.swift; sourceTree = "<group>"; };
 		25AA17851EC0C9820030CD44 /* ActionableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionableViewController.swift; sourceTree = "<group>"; };
 		25F66C591EBDA4EF004CAC8A /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		F9006A561EC01468004175E2 /* ManagementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				25AA17851EC0C9820030CD44 /* ActionableViewController.swift */,
 				251DAFED1EC213B300C47902 /* MediaViewController.swift */,
 				251DAFF31EC21CD500C47902 /* CustomizeUIViewController.swift */,
+				258DB3F31EC7623300B7F78B /* CalendarNotificationTriggerViewController.swift */,
 			);
 			name = DetailViewControllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				F9006A571EC01468004175E2 /* ManagementViewController.swift in Sources */,
 				251DAFEE1EC213B300C47902 /* MediaViewController.swift in Sources */,
+				258DB3F41EC7623300B7F78B /* CalendarNotificationTriggerViewController.swift in Sources */,
 				F971FD571EBC558200D57D91 /* TimeIntervalViewController.swift in Sources */,
 				25F66C5A1EBDA4EF004CAC8A /* NotificationHandler.swift in Sources */,
 				F971FD551EBC54C600D57D91 /* AuthorizationViewController.swift in Sources */,
@@ -500,6 +504,7 @@
 				257F01CC1EC6F1DC00C4F107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F971FD391EBC4FD800D57D91 /* Build configuration list for PBXProject "UserNotificationDemo" */ = {
 			isa = XCConfigurationList;
