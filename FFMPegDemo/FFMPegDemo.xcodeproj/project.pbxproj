@@ -22,6 +22,9 @@
 		253D2C2A1F36F0D000282F72 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D2C231F36F0D000282F72 /* libswscale.a */; };
 		253D2C2C1F36F28E00282F72 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D2C2B1F36F28E00282F72 /* libz.1.2.5.tbd */; };
 		253D2C2E1F36F34700282F72 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D2C2D1F36F34700282F72 /* libiconv.tbd */; };
+		253D2C321F375CD700282F72 /* RecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D2C311F375CD700282F72 /* RecoderViewController.m */; };
+		253D2C351F37647E00282F72 /* BeautifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D2C341F37647E00282F72 /* BeautifyViewController.m */; };
+		253D2C3A1F3776A500282F72 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D2C391F3776A500282F72 /* GPUImageBeautifyFilter.m */; };
 		62F4395F11AD412DE645B7C2 /* libPods-FFMPegDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE12826AA31EEABB41D050F /* libPods-FFMPegDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +154,12 @@
 		253D2C231F36F0D000282F72 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		253D2C2B1F36F28E00282F72 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		253D2C2D1F36F34700282F72 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		253D2C301F375CD700282F72 /* RecoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecoderViewController.h; sourceTree = "<group>"; };
+		253D2C311F375CD700282F72 /* RecoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecoderViewController.m; sourceTree = "<group>"; };
+		253D2C331F37647E00282F72 /* BeautifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifyViewController.h; sourceTree = "<group>"; };
+		253D2C341F37647E00282F72 /* BeautifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifyViewController.m; sourceTree = "<group>"; };
+		253D2C381F3776A500282F72 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		253D2C391F3776A500282F72 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		3401D84F5C06C47FDA871334 /* Pods-FFMPegDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPegDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMPegDemo/Pods-FFMPegDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE12826AA31EEABB41D050F /* libPods-FFMPegDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMPegDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		720DD18006CE27DF655F76C3 /* Pods-FFMPegDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMPegDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMPegDemo/Pods-FFMPegDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,7 +207,9 @@
 		253D2A8D1F36EEE300282F72 /* FFMPegDemo */ = {
 			isa = PBXGroup;
 			children = (
+				253D2C361F37767F00282F72 /* Tools */,
 				253D2BA91F36F0D000282F72 /* FFmpeg-iOS */,
+				253D2C2F1F375CBF00282F72 /* ViewControllers */,
 				253D2A911F36EEE300282F72 /* AppDelegate.h */,
 				253D2A921F36EEE300282F72 /* AppDelegate.m */,
 				253D2A941F36EEE300282F72 /* ViewController.h */,
@@ -412,6 +423,34 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		253D2C2F1F375CBF00282F72 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				253D2C301F375CD700282F72 /* RecoderViewController.h */,
+				253D2C311F375CD700282F72 /* RecoderViewController.m */,
+				253D2C331F37647E00282F72 /* BeautifyViewController.h */,
+				253D2C341F37647E00282F72 /* BeautifyViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		253D2C361F37767F00282F72 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				253D2C371F37768500282F72 /* BeautifyFilter */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		253D2C371F37768500282F72 /* BeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				253D2C381F3776A500282F72 /* GPUImageBeautifyFilter.h */,
+				253D2C391F3776A500282F72 /* GPUImageBeautifyFilter.m */,
+			);
+			name = BeautifyFilter;
+			sourceTree = "<group>";
+		};
 		89B2A3F1AAA448C1F74B9030 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,7 +593,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253D2C351F37647E00282F72 /* BeautifyViewController.m in Sources */,
 				253D2A961F36EEE300282F72 /* ViewController.m in Sources */,
+				253D2C321F375CD700282F72 /* RecoderViewController.m in Sources */,
+				253D2C3A1F3776A500282F72 /* GPUImageBeautifyFilter.m in Sources */,
 				253D2A931F36EEE300282F72 /* AppDelegate.m in Sources */,
 				253D2A901F36EEE300282F72 /* main.m in Sources */,
 			);
