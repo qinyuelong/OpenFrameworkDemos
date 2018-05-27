@@ -1,0 +1,9 @@
+project 'GoogleProtobufDemo.xcodeproj'
+platform :ios, '9.0'
+
+target 'GoogleProtobufDemo' do
+
+#pod 'ProtocolBuffers'
+pod 'Protobuf';
+
+end
